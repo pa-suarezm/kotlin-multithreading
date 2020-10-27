@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KotlinCorrutineExample</string>
+    <string name="placeholder"> </string>
+    <string name="btn_seq">Sequential</string>
+    <string name="btn_con">Concurrent</string>
+    <string name="lbl_seqTime">Sequential time completed in: </string>
+    <string name="lbl_conTime">Concurrent time completed in: </string>
+</resources>

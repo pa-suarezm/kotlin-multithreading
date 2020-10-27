@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_Sequential"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_seq"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_Seq1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Sequential"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_Seq2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_Seq1"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+        android:id="@+id/lbl_seqTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_seqTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_Seq2"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/result_seqTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_seqTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toEndOf="@+id/lbl_seqTime"
+        app:layout_constraintTop_toTopOf="@+id/lbl_seqTime" />
+
+    <Button
+        android:id="@+id/btn_Concurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_con"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_seqTime"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_Con1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Concurrent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_Con2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_Con1"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/lbl_conTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_conTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_Con2"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TextView
+        android:id="@+id/result_conTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_conTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@+id/lbl_conTime"
+        app:layout_constraintTop_toTopOf="@+id/lbl_conTime"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
