@@ -14,11 +14,11 @@ class MainViewModel(
     private val binding: ActivityMainBinding
 ): ViewModel() {
 
-    private val maxCnt = 2_500_000
+    private val maxCnt = 100_000_000
 
     fun sequentialFunction()
     {
-        viewModelScope.launch(Dispatchers.IO)
+        viewModelScope.launch(Dispatchers.Default)
         {
             sequentialExec()
         }
@@ -26,7 +26,7 @@ class MainViewModel(
 
     fun concurrentFunction()
     {
-        viewModelScope.launch(Dispatchers.IO)
+        viewModelScope.launch(Dispatchers.Default)
         {
             concurrentExec()
         }
@@ -75,7 +75,8 @@ class MainViewModel(
 
         for(i in 1..maxCnt)
         {
-            pProgressBar.progress = cnt
+            if(i % 1_000 == 0)
+                pProgressBar.progress = cnt
             cnt++
         }
 

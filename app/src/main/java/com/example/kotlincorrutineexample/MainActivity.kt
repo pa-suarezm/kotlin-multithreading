@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity()
     private lateinit var binding: ActivityMainBinding
 
     //For progress bars
-    private val maxCnt = 2_500_000
+    private val maxCnt = 100_000_000
 
     private lateinit var viewModel: MainViewModel;
 
